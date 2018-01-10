@@ -1,0 +1,287 @@
+*{
+margin:0px;
+padding: 0px;}
+
+#header{
+	background-color: #000000;
+	padding-top: 20px;
+}
+#language{
+	float: right;
+
+}
+#header aside span{
+	color:#777777;
+}
+#header aside{
+	float: right;
+}
+#header aside .btn-dark{
+	background-color: #000000 !important;
+
+}
+#header aside .dropdown-item {
+	background-color: #000000 !important;
+	color:white;
+}
+#header aside .dropdown-menu{
+background-color: #000000 !important;
+}
+#second_row{
+	margin-top: 20px;
+	padding-bottom: 10px;
+}
+#second_row .nav-link{
+	margin-right: 50px;
+	color:white;
+}
+#second_row .nav-link:hover{
+	color:#3691e5;
+}
+#second_row .nav-link:first-child{
+	padding-left: 0px !important;
+}
+#second_row input{
+	background-color: black;
+	border: none;
+	color: white;
+	padding-left: 15px;
+}
+#second_row button{
+	color:white;
+	background-color:#000000; 
+	border: none;
+	padding-right: 5px;
+}
+#second_row aside{
+	float: right;
+	border: 1px solid gray;
+}
+#thrid_row{
+	background-image: url(images/main-logo.png);
+	background-position: 60% 40%;
+	background-repeat: no-repeat;
+	height: 80vh;
+	background-size: cover;
+}
+#main_info{
+	text-transform: uppercase;
+	float: left !important;
+	margin-top: 10%;
+}
+#main_info h4{
+	color: white;
+}
+#main_info h2{
+	color: #1fc2ff;
+	font-size:4em;
+}
+#check_info{
+	 background-color:#000000; 
+	margin-top: 50px;
+    color: #1fc2ff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding:15px;
+    border: 1px solid #1fc2ff;
+    border-radius: 7px;
+}
+#check_info:hover{
+	color: white;
+	border: 1px solid white
+}
+#main_info .slider-buttons{
+	border: 1px solid #1fc2ff;
+	border-radius: 50%;
+	padding: 13px;
+	background-color:#000000; 
+	margin-right: 22px;	
+}
+#main_info .slider-buttons:hover{
+	border:1px solid #000000; 
+	background-color: white;
+}
+#btn_section{
+	margin-top: 70px;
+}
+#products h3{
+	text-align: center;
+	margin-bottom: 50px;
+	text-transform: uppercase;
+	margin-top: 15px;
+	color: #1fc2ff;
+	font-size: 2.5em;
+}
+#products a{
+	color:black;
+	text-decoration: none;
+}
+.product1{
+text-align: center !important;
+text-transform: uppercase;
+margin-bottom: 30px;
+}
+.product1 section {
+	min-height: 142px;
+}
+.product1 h2{
+	font-size: 1.0em  !important;
+	margin-top: 20px;
+	font-weight: bold;
+}
+#newsletter_box h3{
+color: white;
+text-transform: uppercase;
+font-size: 1.5em;
+}
+#newsletter_box h1{
+color: #1fc2ff;
+text-transform: uppercase;
+font-size: 3.5em;
+}
+#newsletter_box input{
+padding-left: 10px;
+border:1px solid gray;
+background-color: #000000;
+color: gray;
+padding-top: 10px;
+padding-bottom: 10px;
+margin-bottom: 0px;
+}
+#newsletter{
+background-image: url(images/photo1.png);
+background-position: center center;
+background-repeat: no-repeat;
+height: 50vh;
+background-size: cover;
+max-height: 100%;
+}
+#newsletter_box{
+margin-top: 8%;	
+}
+#newsletter_box button{
+	color: #1fc2ff;
+	font-size: 1.5em;
+	padding-bottom: 7px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: 1px solid #1fc2ff;
+	background-color: #000000;
+	margin-bottom: 0px !important;
+	border-radius: 5px;
+}
+#newsletter_box button:hover{
+	color: white;
+	border: 1px solid white;
+}
+#about_us{
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 35px;
+}
+#about_us h3{
+	color: #1fc2ff;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+#about_us p{
+	color:black;
+	text-align: justify;
+}
+#about_us a{
+	color: #1fc2ff;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+footer{
+background-color: #000000;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+footer .nav-link {
+	color:white !important;
+}
+footer .nav-link:hover {
+	color:#1fc2ff !important;
+}
+@media only screen and (max-width: 1200px){
+
+#second_row .nav-link{
+	margin-right: 20px;	
+}
+}
+@media only screen and (max-width: 990px){
+#second_row .nav-link{
+	margin-right: 5px;	
+}
+}
+@media only screen and (max-width: 770px){
+
+#second_row aside{
+	margin-top: 15px;
+	float: left;
+}
+#thrid_row{
+	height: 70vh;
+	background-position: 60% 40%;
+}
+#main_info h4{
+	font-size: 1.2em;
+}
+#main_info h2{
+	font-size:3em;
+}
+#check_info{
+    padding:12px;
+}
+#newsletter_box h3{
+
+font-size: 1.2em;
+}
+#newsletter_box h1{
+
+font-size: 3.0em;
+}
+#newsletter_box section{
+	margin-top: 30px;
+}
+}
+@media only screen and (max-width: 570px){
+#thrid_row{
+	height: 70vh;
+	background-position: 80% 20%;
+}
+}
+@media only screen and (max-width: 550px){
+#thrid_row{
+	background-position: 70% 30%;
+}
+}
+@media only screen and (max-width: 470px){
+#thrid_row{
+	background-position: 60% 40%;
+}
+#newsletter_box h3{
+	font-size: 1em;
+}
+#newsletter_box h1{
+	font-size: 2.0em;
+}
+#newsletter_box section{
+	width: 50%;
+}
+#newsletter_box section button{
+	margin-top: 10%;
+}
+#newsletter{
+	background-position: 55% 45%;
+}
+}
+@media only screen and (max-width: 400px){
+
+#newsletter{
+	background-position: 52% 50%;
+}
+}
+
