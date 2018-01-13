@@ -255,7 +255,7 @@ font-size: 3.0em;
 	background-position: 80% 20%;
 }
 #second_row{
-	dispaly:none
+	display:none
 }
 @media only screen and (max-width: 550px){
 #thrid_row{
