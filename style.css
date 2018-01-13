@@ -63,12 +63,12 @@ background-color: #000000 !important;
 	background-repeat: no-repeat;
 	height: 80vh;
 	background-size: cover;
-	min-height: 400px;
+	min-height: 350px;
 }
 #main_info{
 	text-transform: uppercase;
 	float: left !important;
-	margin-top: 65px;
+	margin-top: 7%;
 }
 #main_info h4{
 	color: white;
