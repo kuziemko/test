@@ -12,6 +12,9 @@ padding: 0px;}
 	width: 50% !important;
 	
 }
+.input-group button:hover{
+	cursor: pointer;
+}
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 4px;
@@ -344,9 +347,6 @@ font-size: 3.0em;
 }
 .input-group button{
 	background-color: #1fc2ff !important;
-}
-.input-group button:hover{
-	cursor: pointer;
 }
 .input-group{
 	border:1px solid white;
