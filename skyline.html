@@ -13,14 +13,114 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$('a[href^="#"]').on('click', function(event) {
+				var target = $( $(this).attr('href') );
+				if( target.length ) {
+				event.preventDefault();
+				$('html, body').animate({
+				scrollTop: target.offset().top
+				}, 700);
+				}
+				});//
+		});//jquery ready
+	</script>
 </head>
 <body>
-	<header id="header2">
+	<header id="header">
 		<div class="container">
 			<div class="row">
-				<img src="images/logo.png" class="img-responsive">
+				<img src="images/logo.png" class="img-responsive" id="logo">
 			</div>	
-		</div>
+			</div><!--container-->
+
+			<section class="main_text">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<h3>inwestujemy w sprawiedliwość</h3>
+					<h1>mieć rację to jedno,skutecznie<br> jej obronić to coś zupełnie innego </h1>
+					<nav class="openmenu">
+	 		 <section class="ln1 ln4"></section>
+	  		 <section class="ln2 ln4"></section>
+			 <section class="ln3 ln4"></section>
+		</nav> 
+				</div>
+			</div>
+		</div><!--container-->
+		</section>
 	</header>
+
+	<section id="content">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<article class="products">
+					<h1>o nas</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies viverra viverra. Integer mattis turpis quis neque bibendum mattis. Sed tempor scelerisque magna, nec molestie lacus varius a. Nam sed elementum dui, quis tincidunt eros. <strong>Proin porttitor risus sit amet augue congue imperdiet.</strong> Mauris vehicula turpis tincidunt sapien pellentesque, sit amet fringilla ipsum egestas. Vivamus in sapien magna. Mauris consectetur nibh odio, ac venenatis dui ultricies et. Sed ut felis vel eros mollis efficitur. Etiam mauris quam, aliquet ut orci ac, ultricies pellentesque est. Mauris efficitur vestibulum finibus. Phasellus quis metus id lorem euismod condimentum eu ut lectus. Nunc sagittis<strong>felis nisi, nec tempus</strong> > libero fermentum a. Vestibulum porttitor libero vitae neque maximus fermentum. Duis ullamcorper quam et justo luctus placerat. </p>
+					</article>
+				</div><!--col-->
+			</div><!--row-->
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<article class="products">
+					<h2>praca zwespołowa<br>zapewniamywięcej niż tylko kapitał</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies viverra viverra. Integer mattis turpis quis neque bibendum mattis. Sed tempor scelerisque magna, nec molestie lacus varius a. Nam sed elementum dui, quis tincidunt eros. <strong>Proin porttitor risus sit amet augue congue imperdiet.</strong> Mauris vehicula turpis tincidunt sapien pellentesque, sit amet fringilla ipsum egestas. Vivamus in sapien magna. Mauris consectetur nibh odio, ac venenatis dui ultricies et. Sed ut felis vel eros mollis efficitur. Etiam mauris quam, aliquet ut orci ac, ultricies pellentesque est. Mauris efficitur vestibulum finibus. Phasellus quis metus id lorem euismod condimentum eu ut lectus. Nunc sagittis<strong>felis nisi, nec tempus</strong> > libero fermentum a. Vestibulum porttitor libero vitae neque maximus fermentum. Duis ullamcorper quam et justo luctus placerat. </p>
+					</article>
+				</div><!--col-->
+			</div><!--row-->
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<article class="products">
+					<h2>sukces jest naszą walutą</h2>
+					<p>Mauris id tristique ex. Nam rutrum nisi a tellus posuere, eu viverra tortor rutrum. Nunc eu feugiat libero. Nunc at mauris scelerisque, porttitor <strong> dolor eu, lacinia diam.</strong> Donec nec ligula non magna semper tincidunt vitae sit amet felis. Proin felis lorem, maximus id blandit at, luctus id erat. Sed et rhoncus urna, sit amet venenatis tellus. In vulputate diam sit amet mi fermentum cursus. Suspendisse iaculis elit at porttitor consequat. Ut <strong> nec blandit velit,</strong> a maximus nulla. Vestibulum porta, enim eget rhoncus hendrerit, mi purus semper nisi, sit amet luctus eros ipsum sit amet nunc.  </p>
+					</article>
+				</div><!--col-->
+			</div><!--row-->
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<article class="products">
+					<h2>fiansowanie nie jest ubezpieczeniem</h2>
+					<p>Mauris id tristique ex. Nam rutrum nisi a tellus posuere, eu viverra tortor rutrum. Nunc eu feugiat libero. Nunc at mauris scelerisque, porttitor <strong> dolor eu, lacinia diam.</strong> Donec nec ligula non magna semper tincidunt vitae sit amet felis. Proin felis lorem, maximus id blandit at, luctus id erat. Sed et rhoncus urna, sit amet venenatis tellus. In vulputate diam sit amet mi fermentum cursus. Suspendisse iaculis elit at porttitor consequat. Ut <strong> nec blandit velit,</strong> a maximus nulla. Vestibulum porta, enim eget rhoncus hendrerit, mi purus semper nisi, sit amet luctus eros ipsum sit amet nunc.  </p>
+					</article>
+				</div><!--col-->
+			</div><!--row-->
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<article class="products">
+					<h2>dodatkowe korzyści</h2>
+					<p>Mauris id tristique ex. Nam rutrum nisi a tellus posuere, eu viverra tortor rutrum. Nunc eu feugiat libero. Nunc at mauris scelerisque, porttitor <strong> dolor eu, lacinia diam.</strong> Donec nec ligula non magna semper tincidunt vitae sit amet felis. Proin felis lorem, maximus id blandit at, luctus id erat. Sed et rhoncus urna, sit amet venenatis tellus. In vulputate diam sit amet mi fermentum cursus. Suspendisse iaculis elit at porttitor consequat. Ut <strong> nec blandit velit,</strong> a maximus nulla. Vestibulum porta, enim eget rhoncus hendrerit, mi purus semper nisi, sit amet luctus eros ipsum sit amet nunc.  </p>
+					</article>
+				</div><!--col-->
+			</div><!--row-->
+		</div><!--container-->
+	</section><!--id content-->
+
+	<section id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<h1>Masz pytania?</h1>
+					<h2>Skontaktuj sie z nami</h2>
+					<span><button>napisz</button><button>zadzwoń</button></span>
+				</div>
+			</div>
+		</div><!--container-->
+	</section>
+
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<a href="#header"><img src="images/strzalka_dol.png" class="img-responsive" id="step_up"></a>
+					<h4>copyright &copy 2018 SKYLINE</h4>
+					<h5>created by 10q</h5>
+				</div><!--col-->
+			</div><!--row-->
+		</div><!--container-->
+	</footer>
 </body>
 </html>

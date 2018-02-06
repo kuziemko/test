@@ -14,32 +14,32 @@
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 	<script type="text/javascript">
+		function openManuActive(x) {
+				x.classList.toggle("change");
+			}
+			
+		$(document).ready(function(){
 
-	function openManuActive(x) {
-    		x.classList.toggle("change");
-		}
+			$('.openmenu').click(function(){
+				$('.navmenu').toggleClass('navmenu_ative');
+				$('.nav').toggleClass('nav_active');
+				openManuActive(this);
+			})//click function openmenu
 
-	$(document).ready(function(){
-		$('.openmenu').click(function(){
-			$('.navmenu').toggleClass('navmenu_ative');
-			$('.nav').toggleClass('nav_active');
-			openManuActive(this);
-		})//click function openmenu
-
-		});//jquery ready
-</script>
+			});//jquery ready
+	</script>
 </head>
 <body>
 	<header id="header">
 		<video id="bgvid" autoplay="" muted="" loop="">
 			<source src="images/exp.mp4" type="video/mp4">
 		</video>
-		<section class="openmenu">
+		<nav class="openmenu">
 	 		 <section class="ln1"></section>
 	  		 <section class="ln2"></section>
 			 <section class="ln3"></section>
-		</section> 
-		<section class="navmenu">
+		</nav> 
+		<nav class="navmenu">
 			<ul class="nav">
 				<li>
 					<a href="skyline.html">skyline</a>
@@ -51,7 +51,7 @@
 					<a href="#">kontakt</a>
 				</li>
 			</ul>
-		</section>
+		</nav>
 	</header>
 </body>
 </html>
