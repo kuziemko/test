@@ -25,7 +25,7 @@
 				openManuActive(this);
 			})//menu
 
-			$('a[href^="#"]').on('click', function(event) {
+		$('a[href^="#"]').on('click', function(event) {
 				var target = $( $(this).attr('href') );
 				if( target.length ) {
 				event.preventDefault();
@@ -35,13 +35,14 @@
 				}
 				});//jump
 
-			$(window).scroll(function(){
+		$(window).scroll(function(){
 				parallax();
 			});
 				function parallax(){
 					var wScroll = $(window).scrollTop();
 					$('.parallax-bg').css('background-position','center ' + (wScroll*0.5)+ 'px')
 				};//parallax
+
 		});//jquery ready
 	</script>
 </head>
@@ -70,7 +71,7 @@
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
 					<section id="logo">
-					<a href="index.html"><img src="images/logo.png" class="img-responsive"></a>
+					<a href="index.html"><img src="images/logo1.png" class="img-responsive"></a>
 					</section>
 
 				</div>

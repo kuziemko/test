@@ -121,6 +121,7 @@ position: relative;
 	font-size: 3.0em;
 	min-width: 100%;
 	margin-bottom: 20px;
+	z-index: 1
 }
 #header .navmenu li a {
 	color: #f8fdff;	
