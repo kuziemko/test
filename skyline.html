@@ -15,7 +15,15 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 
 	<script type="text/javascript">
+		function openManuActive(x) {
+				x.classList.toggle("change");
+			}
 		$(document).ready(function(){
+			$('.openmenu').click(function(){
+				$('.navmenu').toggleClass('navmenu_ative');
+				$('.nav').toggleClass('nav_active');
+				openManuActive(this);
+			})//menu
 
 			$('a[href^="#"]').on('click', function(event) {
 				var target = $( $(this).attr('href') );
@@ -25,33 +33,60 @@
 				scrollTop: target.offset().top
 				}, 700);
 				}
-				});//
+				});//jump
+
+			$(window).scroll(function(){
+				parallax();
+			});
+				function parallax(){
+					var wScroll = $(window).scrollTop();
+					$('.parallax-bg').css('background-position','center ' + (wScroll*0.5)+ 'px')
+				};//parallax
 		});//jquery ready
 	</script>
 </head>
 <body>
 	<header id="header">
+		<nav class="openmenu">
+				 		 <section class="ln1 ln4"></section>
+				  		 <section class="ln2 ln4"></section>
+						 <section class="ln3 ln4"></section>
+					</nav> 
+					<nav class="navmenu">
+					<ul class="nav">
+						<li>
+							<a href="skyline.html">skyline</a>
+						</li>
+						<li>
+							<a href="#">działanie</a>
+						</li>
+						<li>
+							<a href="#">kontakt</a>
+						</li>
+					</ul>
+				</nav>
 		<div class="container">
 			<div class="row">
-				<img src="images/logo.png" class="img-responsive" id="logo">
-			</div>	
-			</div><!--container-->
-
-			<section class="main_text">
-			<div class="container">
-			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<h3>inwestujemy w sprawiedliwość</h3>
-					<h1>mieć rację to jedno,skutecznie<br> jej obronić to coś zupełnie innego </h1>
-					<nav class="openmenu">
-	 		 <section class="ln1 ln4"></section>
-	  		 <section class="ln2 ln4"></section>
-			 <section class="ln3 ln4"></section>
-		</nav> 
+
+					<section id="logo">
+					<a href="index.html"><img src="images/logo.png" class="img-responsive"></a>
+					</section>
+
 				</div>
-			</div>
+			</div>	
 		</div><!--container-->
-		</section>
+
+			<section class="main_text parallax-bg"">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<h3>inwestujemy w sprawiedliwość</h3>
+							<h1>mieć rację to jedno,skutecznie<br> jej obronić to coś zupełnie innego </h1>
+						</div>
+					</div>
+				</div><!--container-->
+			</section>
 	</header>
 
 	<section id="content">
@@ -67,7 +102,7 @@
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<article class="products">
-					<h2>praca zwespołowa<br>zapewniamywięcej niż tylko kapitał</h2>
+					<h2>praca zwespołowa<br>zapewniamy więcej niż tylko kapitał</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies viverra viverra. Integer mattis turpis quis neque bibendum mattis. Sed tempor scelerisque magna, nec molestie lacus varius a. Nam sed elementum dui, quis tincidunt eros. <strong>Proin porttitor risus sit amet augue congue imperdiet.</strong> Mauris vehicula turpis tincidunt sapien pellentesque, sit amet fringilla ipsum egestas. Vivamus in sapien magna. Mauris consectetur nibh odio, ac venenatis dui ultricies et. Sed ut felis vel eros mollis efficitur. Etiam mauris quam, aliquet ut orci ac, ultricies pellentesque est. Mauris efficitur vestibulum finibus. Phasellus quis metus id lorem euismod condimentum eu ut lectus. Nunc sagittis<strong>felis nisi, nec tempus</strong> > libero fermentum a. Vestibulum porttitor libero vitae neque maximus fermentum. Duis ullamcorper quam et justo luctus placerat. </p>
 					</article>
 				</div><!--col-->
@@ -83,7 +118,7 @@
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<article class="products">
-					<h2>fiansowanie nie jest ubezpieczeniem</h2>
+					<h2>fiansowanie nie jest pożyczką</h2>
 					<p>Mauris id tristique ex. Nam rutrum nisi a tellus posuere, eu viverra tortor rutrum. Nunc eu feugiat libero. Nunc at mauris scelerisque, porttitor <strong> dolor eu, lacinia diam.</strong> Donec nec ligula non magna semper tincidunt vitae sit amet felis. Proin felis lorem, maximus id blandit at, luctus id erat. Sed et rhoncus urna, sit amet venenatis tellus. In vulputate diam sit amet mi fermentum cursus. Suspendisse iaculis elit at porttitor consequat. Ut <strong> nec blandit velit,</strong> a maximus nulla. Vestibulum porta, enim eget rhoncus hendrerit, mi purus semper nisi, sit amet luctus eros ipsum sit amet nunc.  </p>
 					</article>
 				</div><!--col-->
