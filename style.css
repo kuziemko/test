@@ -60,7 +60,11 @@ transition: all 200ms ease;
 cursor:pointer;
 }
 /*---[ Conteiner/Strona glowna ]----------------g p d l--------------------------------------*/
-
+#circle{
+	
+	position: fixed;
+	top: 50%;
+}
 #header{
 position: relative;
 }
