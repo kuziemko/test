@@ -150,10 +150,12 @@ position: relative;
 	height: 40vh;
 	padding-bottom:50px;
 	padding-top: 30px;
+	min-height: 150px !important;
 }
 #logo img{
 	margin:0 auto;
 	max-height: 180px;
+	min-height: 110px;
 }
 #header .main_text{
 	width: 100%;
@@ -167,6 +169,7 @@ position: relative;
 	display: flex;
 justify-content: center;
 align-items: center; 
+min-height: 200px;
 }
 
 #header .main_text h3{
@@ -404,9 +407,5 @@ align-items: center;
 	#logo img{
 
 	max-height: 110px;
-}
-	#header .main_text h1{
-	
-	 color: red;
 }
 }
