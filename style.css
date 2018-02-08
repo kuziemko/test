@@ -324,6 +324,14 @@ min-height: 200px;
 
 	max-height: 120px;
 }
+#logo{
+	height: 30vh;
+	
+}
+#header .main_text{
+
+	height: 70vh;
+	}
 }
 
 @media only screen and (max-width: 600px){
