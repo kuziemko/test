@@ -343,6 +343,13 @@ min-height: 200px;
 	#header .nav_active{
 		vertical-align: initial;
 	}
+	#header .navmenu li{
+	
+	
+	font-size: 2.0em;
+	margin-bottom: 10px;
+	z-index: 4;
+}
 }
 
 @media only screen and (max-width: 600px){
