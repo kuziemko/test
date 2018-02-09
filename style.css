@@ -404,7 +404,7 @@ min-height: 200px;
 	font-size: 1.0em;
 }
 }
-@media only screen and (max-width: 250px){
+@media only screen and (max-width: 150px){
 #logo img{
 	max-height: 110px;
 }
