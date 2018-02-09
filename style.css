@@ -61,9 +61,7 @@ cursor:pointer;
 }
 /*---[ Conteiner/Strona glowna ]----------------g p d l--------------------------------------*/
 #circle{
-	
 	position: fixed;
-	top: 50%;
 }
 #header{
 position: relative;
@@ -102,7 +100,7 @@ position: relative;
 	position: fixed;
 	right: 50px;
 	top: 40px;
-	z-index: 2;
+	z-index: 50;
 }
 #header .openmenu:hover{
 	cursor: pointer;
@@ -114,6 +112,7 @@ position: relative;
 	display: table;
 	z-index: 1;
 	position: fixed;
+	z-index: 3;
 }
 #header .navmenu_ative{
 	width: 100%;
@@ -125,7 +124,7 @@ position: relative;
 	font-size: 3.0em;
 	min-width: 100%;
 	margin-bottom: 20px;
-	z-index: 1
+	z-index: 4;
 }
 #header .navmenu li a {
 	color: #f8fdff;	
@@ -135,6 +134,7 @@ position: relative;
 	padding: 15px;
 	display: block;
 	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
 }
 #header .nav{
 	width: 100%;
@@ -339,6 +339,9 @@ min-height: 200px;
 #header .main_text{
 
 	height: 65vh;
+	}
+	#header .nav_active{
+		vertical-align: initial;
 	}
 }
 
