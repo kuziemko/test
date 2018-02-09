@@ -408,7 +408,5 @@ min-height: 200px;
 #logo img{
 	max-height: 110px;
 }
-#header .nav_active{
-	vertical-align: initial;
-}
+
 }
