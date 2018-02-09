@@ -149,7 +149,10 @@ position: relative;
 	background-color: #ffffff;
 	color:#0093dd !important;
 }
-/*---podstrona skyline-------------------------------------*/
+/*---skyline.html-------------------------------------*/
+#circle{
+	position: fixed;
+}
 #logo{
 	height: 35vh;
 	padding-bottom:50px;
@@ -178,14 +181,12 @@ justify-content: center;
 align-items: center; 
 min-height: 200px;
 }
-
 #header .main_text h3{
 	text-transform: uppercase;
 	font-size: 2.0em;
 	font-weight: 900;
 	text-align: center;
 	font-family: 'Roboto', sans-serif; 
-
 }
 #header .main_text h1{
 	text-transform: uppercase;
@@ -251,7 +252,6 @@ min-height: 200px;
 	margin: 0 auto;
 	width: 450px;
 	display: block;
-
 }
 #contact button{
 	border: 5px solid #1f1a17;
@@ -290,24 +290,17 @@ min-height: 200px;
 	cursor: pointer;
 }
 
-
-
 @media only screen and (max-width: 1200px){
 #logo img{
-
 	max-height: 160px;
 }
 }
-
 @media only screen and (max-width: 1000px){
-
 #logo img{
-
 	max-height: 140px;
 }
-	#header .main_text h1{
-	font-size: 2.5em;
-	 
+#header .main_text h1{
+	font-size: 2.5em;	 
 }
 #header .main_text h3{
 	font-size: 1.8em;
@@ -325,30 +318,23 @@ min-height: 200px;
 	font-size: 1.5em;
 }
 	#header .main_text h1{
-	font-size: 2.0em;
-	 
+	font-size: 2.0em;	 
 }
 #logo img{
-
 	max-height: 120px;
 }
 #logo{
-	height: 35vh;
-	
+	height: 35vh;	
 }
 #header .main_text{
-
 	height: 65vh;
-	}
-	#header .nav_active{
-		vertical-align: initial;
-	}
-	#header .navmenu li{
-	
-	
+}
+#header .nav_active{
+	vertical-align: initial;
+}
+#header .navmenu li{
 	font-size: 2.0em;
-	margin-bottom: 10px;
-	
+	margin-bottom: 10px;	
 }
 #header .nav{
 	padding-top: 10px;
@@ -356,9 +342,8 @@ min-height: 200px;
 }
 
 @media only screen and (max-width: 600px){
-	#header .main_text h1{
-	font-size: 1.8em;
-	 
+#header .main_text h1{
+	font-size: 1.8em;	 
 }
 #header .main_text h3{
 	font-size: 1.3em;
@@ -369,72 +354,57 @@ min-height: 200px;
 }
 #content .products{
 	padding-left: 10%;
-	padding-right: 10%;
-	
+	padding-right: 10%;	
 }
-#content .products h1 {
-	
-	font-size: 2.0em;
-	
+#content .products h1 {	
+	font-size: 2.0em;	
 }
 #content .products h2{
-
 	 font-size: 1.1em;
 }
-#content .products p{
-	
-	font-size: 0.9em;
-	
+#content .products p{	
+	font-size: 0.9em;	
 }
 }
 
 @media only screen and (max-width:500px){
-		#header .main_text h1{
+#header .main_text h1{
 	font-size: 1.5em;
-	
 }
 #header .main_text h3{
 	font-size: 1.1em;
 }
-#contact h1{
-	
+#contact h1{	
 	font-size: 2.0em;
-	
 }
 #contact h2{
-	
 	font-size: 1.2em;
-	
 	margin-bottom: 30px;
 }
 #contact span{
 	margin: 0 auto;
 	width: 100%;
 	display: block;
-
 }
 #contact button{
-	
-	
 	width: 70%;
 	display: block;
 	margin: 5px auto;
-	
+}
+#header .nav_active{
+	vertical-align: initial;
 }
 }
 @media only screen and (max-width: 450px){
-
-		#header .main_text h1{
-	font-size: 1.3em;
-	 
+#header .main_text h1{
+	font-size: 1.3em;	 
 }
 #header .main_text h3{
 	font-size: 1.0em;
 }
 }
 @media only screen and (max-width: 350px){
-	#logo img{
-
+#logo img{
 	max-height: 110px;
 }
 }
