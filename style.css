@@ -263,6 +263,9 @@ min-height: 200px;
 	font-size: 1.3em;
 	font-weight: 900;
 }
+#contact button a{
+	color: #000;
+}
 #footer{
 	background-color: #eff0f1;
 	padding-top: 60px;
@@ -401,7 +404,7 @@ min-height: 200px;
 	font-size: 1.0em;
 }
 }
-@media only screen and (max-width: 350px){
+@media only screen and (max-width: 250px){
 #logo img{
 	max-height: 110px;
 }
