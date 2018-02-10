@@ -369,6 +369,7 @@ min-height: 200px;
 }
 #header .navmenu li{
 	font-size: 1.7em;
+	margin-bottom: 10px;
 }
 }
 
@@ -416,6 +417,7 @@ min-height: 200px;
 }
 #header .navmenu li{
 	font-size: 1.5em;
+	margin-bottom: 10px;
 }
 }
 }
