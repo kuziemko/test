@@ -367,6 +367,9 @@ min-height: 200px;
 #content .products p{	
 	font-size: 0.9em;	
 }
+#header .navmenu li{
+	font-size: 1.7em;
+}
 }
 
 @media only screen and (max-width:500px){
@@ -401,13 +404,18 @@ min-height: 200px;
 #header .main_text h3{
 	font-size: 1.0em;
 }
-
 }
-@media only screen and (max-width: 250px){
+@media only screen and (max-width: 350px){
 #logo img{
 	max-height: 110px;
 }
+}
+@media only screen and (max-width: 350px){
 #header .nav_active{
 	vertical-align: initial;
+}
+#header .navmenu li{
+	font-size: 1.5em;
+}
 }
 }
