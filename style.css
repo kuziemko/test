@@ -523,8 +523,7 @@ float: right !important;
 			display: none;
 }
 .activity h1{
-			display: none;
-}
+	text-align: center;}
 }
 
 @media only screen and (max-width:500px){
