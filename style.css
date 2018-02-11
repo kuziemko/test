@@ -499,10 +499,9 @@ font-family: 'Roboto', sans-serif;
 	font-size: 1.7em;
 	margin-bottom: 10px;
 }
-.activity h2{
-	color: red;
-	font-size:1.5em;
-	
+.activity a{
+margin-top: 2%;
+float: right !important;
 }	
 .sdev{
 	width: 100%!important;
@@ -510,6 +509,21 @@ font-family: 'Roboto', sans-serif;
 .vid_act video{
 	width: 70%;
 	margin: 0 auto;
+}
+.activity h2{
+	display: none;
+	
+}	
+
+.activity h3{
+	font-size:1.5em;
+}
+
+.activity h4{
+			display: none;
+}
+.activity h1{
+			display: none;
 }
 }
 
