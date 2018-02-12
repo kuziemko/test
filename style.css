@@ -523,9 +523,16 @@ float: right !important;
 			display: none;
 }
 .activity h1{
-	text-align: center;}
+	text-align: center;
+margin-top: 0px;
 }
 
+.activity button{
+	display: none;
+}
+.vid_act video{
+	border-radius: 20px;
+}
 @media only screen and (max-width:500px){
 #header .main_text h1{
 	font-size: 1.5em;
