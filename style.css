@@ -520,7 +520,9 @@ float: right !important;
 }
 
 .activity h4{
-			display: none;
+			text-align: center;
+			font-size: 1.0em;
+			margin-top: 5px;
 }
 .activity h1{
 	text-align: center;
@@ -579,5 +581,7 @@ margin-top: 0px;
 	font-size: 1.5em;
 	margin-bottom: 10px;
 }
+.acytivity h4{
+	display: none;
 }
 }
