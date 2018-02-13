@@ -15,25 +15,100 @@
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 	<link rel="stylesheet" href="animate.css">
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
 	<script src="js/wow.min.js"></script>
-              <script>
+             <script>
                wow = new WOW(
                       {
                       boxClass:     'wow',      // default
                       animateClass: 'animated', // default
                       offset:       0,          // default
-                      mobile:       false,       // default
+                      mobile:       true,       // default
                       live:         true        // default
                     }
                     )
                     wow.init();
               </script>
-
+  
 	<script type="text/javascript">
 		function openManuActive(x) {
 				x.classList.toggle("change");
 			}
 		$(document).ready(function(){
+			$('#fullpage').fullpage({
+		//Navigation
+		menu: '#menu',
+		lockAnchors: false,
+		anchors:['page1', 'page2','page3','page4',],
+		navigation: false,
+		navigationPosition: 'right',
+		navigationTooltips: ['firstSlide', 'secondSlide'],
+		showActiveTooltip: false,
+		slidesNavigation: true,
+		slidesNavPosition: 'bottom',
+
+		//Scrolling
+		css3: false,
+		scrollingSpeed: 700,
+		autoScrolling: true,
+		fitToSection: true,
+		fitToSectionDelay: 1000,
+		scrollBar: true,
+		easing: 'easeInOutCubic',
+		easingcss3: 'ease',
+		loopBottom: false,
+		loopTop: false,
+		loopHorizontal: true,
+		continuousVertical: false,
+		continuousHorizontal: false,
+		scrollHorizontally: false,
+		interlockedSlides: false,
+		dragAndMove: false,
+		offsetSections: false,
+		resetSliders: false,
+		fadingEffect: false,
+		normalScrollElements: '#element1, .element2',
+		scrollOverflow: false,
+		scrollOverflowReset: false,
+		scrollOverflowOptions: null,
+		touchSensitivity: 15,
+		normalScrollElementTouchThreshold: 5,
+		bigSectionsDestination: null,
+
+		//Accessibility
+		keyboardScrolling: true,
+		animateAnchor: true,
+		recordHistory: true,
+
+		//Design
+		controlArrows: true,
+		verticalCentered: true,
+		sectionsColor : [],
+		paddingTop: '0em',
+		paddingBottom: '0px',
+		fixedElements: '#header, .footer',
+		responsiveWidth: 0,
+		responsiveHeight: 0,
+		responsiveSlides: false,
+		parallax: false,
+		parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+
+		//Custom selectors
+		sectionSelector: '.section',
+		slideSelector: '.slide',
+
+		lazyLoading: true,
+
+		//events
+		onLeave: function(index, nextIndex, direction){},
+		afterLoad: function(anchorLink, index){},
+		afterRender: function(){},
+		afterResize: function(){},
+		afterResponsive: function(isResponsive){},
+		afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+		onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+	});
 			$('.openmenu').click(function(){
 				$('.navmenu').toggleClass('navmenu_ative');
 				$('.nav').toggleClass('nav_active');
@@ -61,7 +136,10 @@
 	</script>
 </head>
 <body>
+	<div id="fullpage">
+	<div class="section">
 	<header id="header">
+		
 		<nav class="openmenu">
 			 <section class="ln1 ln4"></section>
 			 <section class="ln2 ln4"></section>
@@ -114,7 +192,8 @@
 		</div><!--container-->
 	<button class="next_element"><img src="images/down.png"></button>
 	</section><!--activity-->
-
+</div>
+<div class="section">
 		<section class="activity">
 		<div class="container ">
 			<div class="row">
@@ -139,7 +218,8 @@
 		</div><!--container-->
 		<button class="next_element"><img src="images/down.png"></button>
 	</section><!--activity-->
-
+</div>
+<div class="section">
 		<section class="activity">
 		<div class="container ">
 			<div class="row">
@@ -164,7 +244,8 @@
 		</div><!--container-->
 		<button class="next_element"><img src="images/down.png"></button>
 	</section><!--activity-->
-
+</div>
+<div class="section">
 		<section class="activity">
 		<div class="container  ">
 			<div class="row">
@@ -189,7 +270,8 @@
 		</div><!--container-->
 		<button class="next_element"><img src="images/down.png"></button>
 	</section><!--activity-->
-
+</div>
+<div class="section">
 	<section  class="activity">
 		<div class="container ">
 			<div class="row">
@@ -214,7 +296,8 @@
 		</div><!--container-->
 		<button class="next_element"><img src="images/down.png"></button>
 	</section><!--activity-->
-
+</div>
+<div class="section">
 			<section class="activity">
 		<div class="container">
 			<div class="row">
@@ -239,8 +322,8 @@
 		</div><!--container-->
 		<button class="next_element"><img src="images/down.png"></button>
 	</section><!--activity-->	
-
-
+</div>
+<div class="section">
 	<footer id="footer">
 		<div class="container">
 			<div class="row">
@@ -252,5 +335,7 @@
 			</div><!--row-->
 		</div><!--container-->
 	</footer>
+</div>
+</div>
 </body>
 </html>
