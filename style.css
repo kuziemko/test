@@ -530,6 +530,7 @@ display: none;
 }
 .activity a{
 	font-size: 1.0em;
+	margin-top: 2%;
 }
 .activity button{
 	width: 35px;
@@ -571,6 +572,11 @@ display: none;
 @media only screen and (max-width: 350px){
 #logo img{
 	max-height: 110px;
+}
+.vid_act video{
+border-radius: 20px;
+width: 60%;
+margin: 0 auto;
 }
 }
 @media only screen and (max-width: 350px){
