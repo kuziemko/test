@@ -291,6 +291,7 @@ align-items: center;
 	color: #000;
 	
 }
+
 #step_up{
 	margin: 0 auto;
 	height: 80px;
@@ -394,9 +395,6 @@ font-family: 'Roboto', sans-serif;
 .activity h1{
 	font-size: 1.2em;
 }
-.activity button{
-	margin-top: 0px;
-}
 }
 @media only screen and (max-width: 1000px){
 #logo img{
@@ -422,6 +420,10 @@ font-family: 'Roboto', sans-serif;
 .activity h4{
 	padding-right: 10%;
 	padding-left: 5%;
+}
+#step_up{
+	margin: 0 auto;
+	height: 60px;
 }
 }
 @media only screen and (max-width: 900px){
@@ -505,13 +507,15 @@ font-family: 'Roboto', sans-serif;
 	font-size: 1.7em;
 	margin-bottom: 10px;
 }
-	
+.activity{
+	min-height: 500px;
+}	
 .sdev{
 	width: 100%!important;
 }
 .vid_act video{
 border-radius: 20px;
-width: 70%;
+width: 80%;
 margin: 0 auto;
 }
 .activity h1{
@@ -522,17 +526,14 @@ display: none;
 
 }
 .activity h4{
-	margin-top: 2%;
-	padding-left: 15%;
-	padding-right: 15%;
-	text-align: center;
-	font-size: 1.0em;
+	display: none;
 }
 .activity a{
 	font-size: 1.0em;
 }
 .activity button{
 	width: 35px;
+	margin-top: 10px;
 }
 @media only screen and (max-width:500px){
 #header .main_text h1{
