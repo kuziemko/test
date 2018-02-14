@@ -545,6 +545,7 @@ display: none;
 }
 #contact h1{	
 	font-size: 2.0em;
+
 }
 #contact h2{
 	font-size: 1.2em;
@@ -560,6 +561,9 @@ display: none;
 	display: block;
 	margin: 5px auto;
 }
+.activity h1{
+	display: none;
+}
 }
 @media only screen and (max-width: 450px){
 #header .main_text h1{
@@ -568,9 +572,7 @@ display: none;
 #header .main_text h3{
 	font-size: 1.0em;
 }
-.activity h1{
-	display: none;
-}
+
 }
 @media only screen and (max-width: 350px){
 #logo img{
