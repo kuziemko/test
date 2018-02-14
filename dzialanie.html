@@ -24,7 +24,7 @@
                       boxClass:     'wow',      // default
                       animateClass: 'animated', // default
                       offset:       0,          // default
-                      mobile:       true,       // default
+                      mobile:       false,       // default
                       live:         true        // default
                     }
                     )
@@ -40,7 +40,7 @@
 		//Navigation
 		menu: '#menu',
 		lockAnchors: false,
-		anchors:['page1', 'page2','page3','page4',],
+		anchors:['page1', 'page2','page3','page4','page5','page6','page7','page8',],
 		navigation: false,
 		navigationPosition: 'right',
 		navigationTooltips: ['firstSlide', 'secondSlide'],
@@ -125,12 +125,7 @@
 				}
 				});//jump
 		$('.next_element').on('click', function () {
-    var ele = $(this).closest("section").find(".next_element");
-    // this will search within the section
-    $("html, body").animate({
-         scrollTop: $(ele).offset().top
-    }, 1000);
-    return false;
+    $.fn.fullpage.moveSectionDown();
 });
 		});//jquery ready
 	</script>
@@ -162,173 +157,174 @@
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<section id="logo">
-					<a href="index.html"><img src="images/logo1.png" class="img-responsive"></a>
+					<a href="index.html"><img data-src="images/logo1.png" class="img-responsive"></a>
 					</section>
 				</div><!--col-->
 			</div><!--row-->
 		</div><!--container-->
 	</header>
-	<section class="activity">
+	<section class="activity dis_block element2">
 		<div class="container ">
 			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="col-lg-12  col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
 					<h1>mieć rację to jedno, skutecznie<br>jej obronić to coś zupełnie innego</h1>
 				</div><!--col-->
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 sdev">
+					<div class="col-lg-6  col-lg-offset-1 col-md-6 col-sm-6 col-xs-6 sdev">
 						<section class="vid_act">
 							<video width="100%" height="auto">
-							<source src="images/sky_vid.mp4" type="video/mp4">
+							<source data-src="images/sky_vid.mp4" type="video/mp4">
 							</video>
 							<h3>o nas</h3>
 						</section>
 					</div><!--col-->
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 sdev">
+					<div class="col-lg-5 col-md-6 col-sm-6 col-xs-6 sdev">
 						<h2>inwestujemy w sprawiedliwość</h2>
 						<h4>Nawet jeśli szanse na wygraną są duże, wynik procesu sądowego zawsze jest
 						trudny do przewidzenia, a jego koszty do oszacowania.</h4>
-						<a href="">czytaj <img src="images/strzalka_bok.png"></a>
+						<a href="">czytaj <img data-src="images/strzalka_bok.png"></a>
 					</div>
+
 			</div><!--row-->	
+				<button class="next_element"><img data-src="images/down.png"></button>
 		</div><!--container-->
-	<button class="next_element"><img src="images/down.png"></button>
+	
 	</section><!--activity-->
 </div>
 <div class="section">
 		<section class="activity">
 		<div class="container ">
 			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  wow slideInRight" data-wow-delay="0.5s">
+				<div class="col-lg-12 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12  wow slideInRight" data-wow-delay="0.5s">
 					<h1>uzyskanie finansowania<br>jest wyjątkowo proste</h1>
 					<h2>o jeden krok<br> od sukcesu</h2>
 				</div><!--col-->
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 sdev  wow slideInRight" data-wow-delay="1s">
+					<div class="col-lg-6 col-lg-offset-1 col-md-6 col-sm-6 col-xs-6 sdev  wow slideInRight" data-wow-delay="1s">
 						<section class="vid_act">
 							<video width="100%" height="auto">
-							<source src="images/grass.mp4" type="video/mp4">
+							<source data-src="images/grass.mp4" type="video/mp4">
 							</video>
 							<h3>jak działamy</h3>
 						</section>
 					</div><!--col-->
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 sdev wow bounceInLeft" data-wow-delay="2s">
+					<div class="col-lg-5 col-md-6 col-sm-6 col-xs-6 sdev wow bounceInLeft" data-wow-delay="2s">
 						<h4>Jeśli przysługuje Państwu uzasasdnione roszczenie, a Państwa pełnomocnik
 						zbadał okoliczności faktyczne sprawy</h4>
-						<a href="">czytaj <img src="images/strzalka_bok.png"></a>
+						<a href="">czytaj <img data-src="images/strzalka_bok.png"></a>
 					</div>
 			</div><!--row-->
+			<button class="next_element"><img data-src="images/down.png"></button>
 		</div><!--container-->
-		<button class="next_element"><img src="images/down.png"></button>
 	</section><!--activity-->
 </div>
 <div class="section">
 		<section class="activity">
 		<div class="container ">
 			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 wow slideInRight" data-wow-delay="0.5s">
+				<div class="col-lg-12 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12 wow slideInRight" data-wow-delay="0.5s">
 					<h1>dawid i goliat<br>rentowne przedsiebiorstwa</h1>
 					<h2>finansowanie sporów<br> wyrównuje szanse</h2>
 				</div><!--col-->
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 sdev   wow slideInRight" data-wow-delay="1s">
+					<div class="col-lg-6 col-lg-offset-1 col-md-6 col-sm-6 col-xs-6 sdev   wow slideInRight" data-wow-delay="1s">
 						<section class="vid_act">
 							<video width="100%" height="auto">
-							<source src="images/mountain.mp4" type="video/mp4">
+							<source data-src="images/mountain.mp4" type="video/mp4">
 							</video>
 							<h3>co finansujemy</h3>
 						</section>
 					</div><!--col-->
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 sdev pad_right wow bounceInLeft" data-wow-delay="2s">
+					<div class="col-lg-5 col-md-6 col-sm-6 col-xs-6 sdev pad_right wow bounceInLeft" data-wow-delay="2s">
 						<h4>słabszych uczestników konfliktu, którzy często zmuszeni są 
 						mierzyć sie z większymi przeciwnikami</h4>
-						<a href="">czytaj <img src="images/strzalka_bok.png"></a>
+						<a href="">czytaj <img data-src="images/strzalka_bok.png"></a>
 					</div>
 			</div><!--row-->
+			<button class="next_element"><img data-src="images/down.png"></button>
 		</div><!--container-->
-		<button class="next_element"><img src="images/down.png"></button>
 	</section><!--activity-->
 </div>
 <div class="section">
 		<section class="activity">
 		<div class="container  ">
 			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  wow slideInRight" data-wow-delay="0.5s">
+				<div class="col-lg-12 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12  wow slideInRight" data-wow-delay="0.5s">
 					<h1>dawid i goliat<br>finansowanie sporów wyrównuje szanse</h1>
 					<h2>zwolnienie od<br> kosztów sądowych</h2>
 				</div><!--col-->
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 sdev  wow slideInRight" data-wow-delay="1s">
+					<div class="col-lg-6 col-lg-offset-1 col-md-6 col-sm-6 col-xs-6 sdev  wow slideInRight" data-wow-delay="1s">
 						<section class="vid_act">
 							<video width="100%" height="auto">
-							<source src="images/sea.mp4" type="video/mp4">
+							<source data-src="images/sea.mp4" type="video/mp4">
 							</video>
 							<h3>koszty procesu</h3>
 						</section>
 					</div><!--col-->
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6  sdev pad_right wow bounceInLeft" data-wow-delay="2s">
+					<div class="col-lg-5 col-md-6 col-sm-6 col-xs-6  sdev pad_right wow bounceInLeft" data-wow-delay="2s">
 						<h4>słabszych uczestników konfliktu, którzy często zmuszeni są 
 						mierzyć sie z większymi przeciwnikami</h4>
-						<a href="">czytaj <img src="images/strzalka_bok.png"></a>
+						<a href="">czytaj <img data-src="images/strzalka_bok.png"></a>
 					</div>
 			</div><!--row-->
+			<button class="next_element"><img data-src="images/down.png"></button>
 		</div><!--container-->
-		<button class="next_element"><img src="images/down.png"></button>
 	</section><!--activity-->
 </div>
 <div class="section">
 	<section  class="activity">
 		<div class="container ">
 			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 wow slideInRight" data-wow-delay="0.5s">
+				<div class="col-lg-12 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12 wow slideInRight" data-wow-delay="0.5s">
 					<h1>Elementów strategii<br>które wymagają wzmocnienia</h1>
 					<h2 >pozew bez zadnego<br>ryzyka finasowego</h2>
 				</div><!--col-->
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 sdev  wow slideInRight" data-wow-delay="1s">
+					<div class="col-lg-6 col-lg-offset-1 col-md-6 col-sm-6 col-xs-6 sdev  wow slideInRight" data-wow-delay="1s">
 						<section class="vid_act">
 							<video width="100%" height="auto">
-							<source src="images/beach.mp4" type="video/mp4">
+							<source data-src="images/beach.mp4" type="video/mp4">
 							</video>
 							<h3>dla prawników</h3>
 						</section>
 					</div><!--col-->
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 sdev pad_right wow bounceInLeft" data-wow-delay="2s">
+					<div class="col-lg-5 col-md-6 col-sm-6 col-xs-6 sdev pad_right wow bounceInLeft" data-wow-delay="2s">
 						<h4>Istnieje wiele dobrych argumentów skorzystania z 
 						finansowania oferowanego przez SKYLINE.</h4>
-						<a href="">czytaj <img src="images/strzalka_bok.png"></a>
+						<a href="">czytaj <img data-src="images/strzalka_bok.png"></a>
 					</div>
 			</div><!--row-->
+			<button class="next_element"><img data-src="images/down.png"></button>
 		</div><!--container-->
-		<button class="next_element"><img src="images/down.png"></button>
 	</section><!--activity-->
 </div>
 <div class="section">
-			<section class="activity">
+			<section class="activity element2">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 wow slideInRight" data-wow-delay="0.5s">
+				<div class="col-lg-12 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12 wow slideInRight" data-wow-delay="0.5s">
 					<h1>dawid i goliat<br>finansowanie sporów wyrównuje szanse</h1>
 					<h2>dopuszczalne we wszystkich <br> jurysdykcjach w europie</h2>
 				</div><!--col-->
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 sdev  wow slideInRight" data-wow-delay="1s">
+					<div class="col-lg-6 col-lg-offset-1 col-md-6 col-sm-6 col-xs-6 sdev  wow slideInRight" data-wow-delay="1s">
 						<section class="vid_act">
 							<video width="100%" height="auto">
-							<source src="images/australia.mp4" type="video/mp4">
+							<source data-src="images/australia.mp4" type="video/mp4">
 							</video>
 							<h3>strefa inwestora</h3>
 						</section>
 					</div><!--col-->
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6  sdev pad_right wow bounceInLeft" data-wow-delay="2s">
+					<div class="col-lg-5 col-md-6 col-sm-6 col-xs-6  sdev pad_right wow bounceInLeft" data-wow-delay="2s">
 						<h4>Finansowanie sporów to dynamicznie rozwijająca sie światowa 
 						branża, atrakcyjna także dla inwestorów</h4>
-						<a href="">czytaj <img src="images/strzalka_bok.png"></a>
+						<a href="">czytaj <img data-src="images/strzalka_bok.png"></a>
 					</div>
 			</div><!--row-->
 		</div><!--container-->
-		<button class="next_element"><img src="images/down.png"></button>
 	</section><!--activity-->	
-</div>
-<div class="section">
+
+
 	<footer id="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<a href="#header"><img src="images/strzalka_dol.png" class="img-responsive" id="step_up"></a>
+				<div class="col-lg-12  col-md-12 col-sm-12 col-xs-12">
+					<a href="#header"><img data-src="images/strzalka_dol.png" class="img-responsive" id="step_up"></a>
 					<h4>copyright &copy 2018 SKYLINE</h4>
 					<h5>created by 10q</h5>
 				</div><!--col-->
