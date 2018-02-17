@@ -59,6 +59,13 @@ li, li:hover{
 transition: all 200ms ease;
 cursor:pointer;
 }
+
+/* Wow plugin */
+html{
+	max-width:100% !important;
+	overflow-x:hidden !important;
+}
+
 /*---[ Conteiner/Strona glowna ]----------------g p d l--------------------------------------*/
 #circle{
 	position: fixed;
@@ -108,7 +115,7 @@ position: relative;
 #header .navmenu{
 	background-color: #0093dd;
 	position: absolute;
-	opacity: 0.8;
+	opacity: 0.9;
 	display: table;
 	z-index: 1;
 	position: fixed;
@@ -160,6 +167,7 @@ position: relative;
 	justify-content: center;
 	align-items: center; 
 	margin-bottom: 40px;
+
 }
 #logo img{
 	margin:0 auto;
@@ -296,17 +304,15 @@ align-items: center;
 	cursor: pointer;
 }
 /*---dzialania-------------------------------------*/
-.dis_block{
-	display: block!important;
-}
-.dis_block button{
-	margin-top: 3px !important;
-}
+
 .activity{
 	height: 100vh;
 	display: flex;
 justify-content: center;
 align-items: center; 
+}
+.disp_auto{
+	height: auto !important;
 }
 .activity h1{
 	font-size: 1.7em;
@@ -320,11 +326,14 @@ position: absolute;
 right:  370px;
 font-weight: bold;
 text-transform: uppercase;
-font-size: 2.8em;
+font-size: 2.5em;
 margin-top: 0px;
 font-family: 'Roboto', sans-serif;
-z-index: 2;
 color: #1f1a17;
+z-index: 2;
+right: auto;
+left: -60px;
+width: 100%;
 }
 .vid_act{
 	position: relative;
@@ -334,7 +343,7 @@ align-items: center;
 }
 .vid_act h3{
 position: absolute;
-font-size: 2.8em;
+font-size: 2.5em;
 text-transform: uppercase;
 font-weight: bold;
 font-family: 'Roboto', sans-serif;
@@ -374,7 +383,7 @@ font-family: 'Roboto', sans-serif;
 	margin-right: auto;
 	margin-left: auto;
 	display: block;
-	margin-top: 35px;
+	margin-top: 45px;
 	background-color: #fff;
 }
 @media only screen and (max-width: 1200px){
@@ -382,13 +391,13 @@ font-family: 'Roboto', sans-serif;
 	max-height: 160px;
 }
 .activity h3{
-		font-size: 2.3em;
+		font-size: 2.0em;
 }
 .activity h1{
 	font-size: 1.4em;
 }
 .activity h2{
-	font-size: 2.3em;
+	font-size: 2.0em;
 }
 .activity h4{
 	font-size: 1.3em;
@@ -414,11 +423,11 @@ font-family: 'Roboto', sans-serif;
 }
 .activity h3{
 
-	font-size: 2.0em;
+	font-size: 1.6em;
 }
 .activity h2{
-	font-size: 2.0em;
-	right: 210px;
+	font-size: 1.6em;
+
 }
 .activity h1{
 	font-size: 1.1em;
@@ -431,6 +440,14 @@ font-family: 'Roboto', sans-serif;
 }
 }
 @media only screen and (max-width: 900px){
+	.activity h3{
+
+	font-size: 1.6em;
+}
+.activity h2{
+	font-size: 1.6em;
+
+}
 }
 
 @media only screen and (max-width: 760px){
@@ -469,12 +486,20 @@ font-family: 'Roboto', sans-serif;
 border-radius: 20px;
 width: 60%;
 margin: 0 auto;
+
 }
 .activity h1{
 	text-align: center;
+	
 }
 .activity h2{
-	display: none;
+margin-top: 10px;
+	position: initial;
+	text-align: center;
+	font-size: 1.5em;
+}
+.activity h3{
+	font-size: 1.5em;
 }
 .activity h4{
 	display: none;
@@ -487,11 +512,10 @@ align-items: center;
 .activity button img{
 	height: 56px;
 }
-.activity{
-	height: auto;
-}
+
 #footer{
 	margin-top: 30px;
+
 }
 }
 @media only screen and (max-width: 700px){
@@ -566,6 +590,16 @@ font-size: 1.0em;
 .activity h1{
 font-size: 0.9em;
 }
+.vid_act video{
+border-radius: 20px;
+width: 90%;
+margin: 0 auto;
+}
+.activity h2{
+margin-top: 10px;
+	position: initial;
+	text-align: center;
+	font-size: 1.2em;
 }
 @media only screen and (max-width: 450px){
 #header .main_text h1{
