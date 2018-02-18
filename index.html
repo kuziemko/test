@@ -5,29 +5,147 @@
 	  <title>SKYLINE</title>
 	  <meta http-equiv="X-UA-Compatibile" content="IE=edge,chrome=1"/>
 	  <meta name="viewport" content="width=device-width" content="initial-scale=1">
-	  <link rel="stylesheet" href="style.css" type="text/css"/>
+	  <link rel="stylesheet" href="css/style.css" type="text/css"/>
 	  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
 	 <!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!-- Latest compiled JavaScript -->
+
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
-	
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script src="js/wow.min.js"></script>
+
+	<!-- Larax(paralax effect) -->
+	<script src="https://unpkg.com/object-fit-images/dist/ofi.min.js"></script>
+	<!-- Jarallax -->
+    <link href="js/jarallax.css" rel="stylesheet">
+    <script src="js/jarallax.js"></script>
+    <script src="js/jarallax-video.js"></script>
+    <script src="js/jarallax-element.js"></script>
+   
 	<script type="text/javascript">
+		 new WOW().init();
+
 		function openManuActive(x) {
-				x.classList.toggle("change");
-			}
-			
+			x.classList.toggle("change");
+		} //nav open-close
+
+		 wow = new WOW(
+             {
+               boxClass:     'wow',      // default
+               animateClass: 'animated', // default
+               offset:       0,          // default
+               mobile:       false,       // default
+               live:         true        // default
+                }
+                )
+         wow.init(); 
+
 		$(document).ready(function(){
 
-			$('.openmenu').click(function(){
-				$('.navmenu').toggleClass('navmenu_ative');
-				$('.nav').toggleClass('nav_active');
-				openManuActive(this);
-			})//click function openmenu
+			$('#fullpage').fullpage({
+		//Navigation
+		menu: '#menu',
+		lockAnchors: false,
+		anchors:['page1', 'page2','page3','page4','page5','page6','page7','page8',],
+		navigation: false,
+		navigationPosition: 'right',
+		navigationTooltips: ['firstSlide', 'secondSlide'],
+		showActiveTooltip: false,
+		slidesNavigation: true,
+		slidesNavPosition: 'bottom',
 
-			});//jquery ready
+		//Scrolling
+		css3: false,
+		scrollingSpeed: 700,
+		autoScrolling: true,
+		fitToSection: true,
+		fitToSectionDelay: 1000,
+		scrollBar: true,
+		easing: 'easeInOutCubic',
+		easingcss3: 'ease',
+		loopBottom: false,
+		loopTop: false,
+		loopHorizontal: true,
+		continuousVertical: false,
+		continuousHorizontal: false,
+		scrollHorizontally: false,
+		interlockedSlides: false,
+		dragAndMove: false,
+		offsetSections: false,
+		resetSliders: false,
+		fadingEffect: false,
+		normalScrollElements: '#element1, .element2',
+		scrollOverflow: false,
+		scrollOverflowReset: false,
+		scrollOverflowOptions: null,
+		touchSensitivity: 15,
+		normalScrollElementTouchThreshold: 5,
+		bigSectionsDestination: null,
+
+		//Accessibility
+		keyboardScrolling: true,
+		animateAnchor: true,
+		recordHistory: true,
+
+		//Design
+		controlArrows: true,
+		verticalCentered: true,
+		sectionsColor : [],
+		paddingTop: '0em',
+		paddingBottom: '0px',
+		fixedElements: '#header, .footer',
+		responsiveWidth: 0,
+		responsiveHeight: 0,
+		responsiveSlides: false,
+		parallax: false,
+		parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+
+		//Custom selectors
+		sectionSelector: '.section',
+		slideSelector: '.slide',
+
+		lazyLoading: true,
+
+		//events
+		onLeave: function(index, nextIndex, direction){},
+		afterLoad: function(anchorLink, index){},
+		afterRender: function(){},
+		afterResize: function(){},
+		afterResponsive: function(isResponsive){},
+		afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+		onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+	});//fullpage.js
+
+		$('.openmenu').click(function(){
+			$('.navmenu').toggleClass('navmenu_ative');
+			$('.nav').toggleClass('nav_active');
+			openManuActive(this);
+		})//menu open-close
+
+		$('a[href^="#"]').on('click', function(event) {
+				var target = $( $(this).attr('href') );
+				if( target.length ) {
+				event.preventDefault();
+				$('html, body').animate({
+				scrollTop: target.offset().top
+				}, 700);
+				}
+		});//jump
+
+		$('.next_element').on('click', function () {
+   		 	$.fn.fullpage.moveSectionDown();
+			}); //move section down
+
+		$('.jarallax').jarallax({
+				speed: 0.2
+			}); //parallax
+
+		});//jquery ready
 	</script>
 </head>
 <body>

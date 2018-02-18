@@ -5,7 +5,7 @@
 	  <title>SKYLINE</title>
 	  <meta http-equiv="X-UA-Compatibile" content="IE=edge,chrome=1"/>
 	  <meta name="viewport" content="width=device-width" content="initial-scale=1">
-	  <link rel="stylesheet" href="style.css" type="text/css"/>
+	  <link rel="stylesheet" href="css/style.css" type="text/css"/>
 	  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
 	  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet"> 
 	 <!-- Latest compiled and minified CSS -->
@@ -14,29 +14,36 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
-	<link rel="stylesheet" href="animate.css">
-	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
-	<script type="text/javascript" src="jquery.fullPage.js"></script>
+
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 	<script src="js/wow.min.js"></script>
-	<script src="parallax.js"></script>
+	<!-- Larax(paralax effect) -->
+	<script src="https://unpkg.com/object-fit-images/dist/ofi.min.js"></script>
+	<!-- Jarallax -->
+    <link href="js/jarallax.css" rel="stylesheet">
+    <script src="js/jarallax.js"></script>
+    <script src="js/jarallax-video.js"></script>
+    <script src="js/jarallax-element.js"></script>
+
 	<script type="text/javascript">
+		 new WOW().init();
 
-				function openManuActive(x) {
-						x.classList.toggle("change");
-					} //nav open-close
+		function openManuActive(x) {
+			x.classList.toggle("change");
+		} //nav open-close
 
-			  wow = new WOW(
-                      {
-                      boxClass:     'wow',      // default
-                      animateClass: 'animated', // default
-                      offset:       0,          // default
-                      mobile:       false,       // default
-                      live:         true        // default
-                    }
-                    )
-                    wow.init(); 
-
-
+		 wow = new WOW(
+             {
+               boxClass:     'wow',      // default
+               animateClass: 'animated', // default
+               offset:       0,          // default
+               mobile:       false,       // default
+               live:         true        // default
+                }
+                )
+         wow.init(); 
 
 		$(document).ready(function(){
 
@@ -114,10 +121,6 @@
 		onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
 	});//fullpage.js
 
-
-
-
-
 		$('.openmenu').click(function(){
 			$('.navmenu').toggleClass('navmenu_ative');
 			$('.nav').toggleClass('nav_active');
@@ -137,6 +140,10 @@
 		$('.next_element').on('click', function () {
    		 	$.fn.fullpage.moveSectionDown();
 			}); //move section down
+
+		$('.jarallax').jarallax({
+				speed: 0.2
+			}); //parallax
 
 		});//jquery ready
 	</script>
@@ -195,7 +202,6 @@
 								trudny do przewidzenia, a jego koszty do oszacowania.</h4>
 								<a href="">czytaj <img data-src="images/strzalka_bok.png"></a>
 							</div>
-
 					</div><!--row-->	
 						<button class="next_element"><img data-src="images/down2.png"></button>
 				</div><!--container-->
@@ -236,7 +242,7 @@
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 wow slideInRight" data-wow-delay="0.5s">
 					<h1>dawid i goliat<br>rentowne przedsiebiorstwa</h1>
 				</div><!--col-->
-					<div class="col-lg-6 col-md-6 col-sm-7 col-xs-12   wow slideInRight" data-wow-delay="1s">
+					<div class="col-lg-6 col-md-6 col-sm-7 col-xs-12 wow slideInRight" data-wow-delay="1s">
 						<section class="vid_act">
 							<video width="100%" height="auto">
 							<source data-src="images/mountain.mp4" type="video/mp4">
@@ -260,10 +266,10 @@
 		<section class="activity">
 		<div class="container  ">
 			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  wow slideInRight" data-wow-delay="0.5s">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 wow slideInRight" data-wow-delay="0.5s">
 					<h1>dawid i goliat<br>finansowanie sporów wyrównuje szanse</h1>
 				</div><!--col-->
-					<div class="col-lg-6 col-md-6 col-sm-7 col-xs-12  wow slideInRight" data-wow-delay="1s">
+					<div class="col-lg-6 col-md-6 col-sm-7 col-xs-12 wow slideInRight" data-wow-delay="1s">
 						<section class="vid_act">
 							<video width="100%" height="auto">
 							<source data-src="images/sea.mp4" type="video/mp4">
@@ -271,7 +277,7 @@
 							<h3>koszty procesu</h3>
 						</section>
 					</div><!--col-->
-					<div class="col-lg-6 col-md-6 col-sm-5 col-xs-12 pad_right wow bounceInLeft" data-wow-delay="2s">
+					<div class="col-lg-6 col-md-6 col-sm-5 col-xs-12 wow bounceInLeft" data-wow-delay="2s">
 					    <h2>zwolnienie od<br> kosztów sądowych</h2>
 						<h4>słabszych uczestników konfliktu, którzy często zmuszeni są 
 						mierzyć sie z większymi przeciwnikami</h4>
@@ -287,7 +293,7 @@
 	<section  class="activity">
 		<div class="container ">
 			<div class="row">
-				<div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 wow slideInRight" data-wow-delay="0.5s">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 wow slideInRight" data-wow-delay="0.5s">
 					<h1>Elementów strategii<br>które wymagają wzmocnienia</h1>
 				</div><!--col-->
 					<div class="col-lg-6 col-md-6 col-sm-7 col-xs-12 wow slideInRight" data-wow-delay="1s">
@@ -298,7 +304,7 @@
 							<h3>dla prawników</h3>
 						</section>
 					</div><!--col-->
-					<div class="col-lg-6 col-md-6 col-sm-5 col-xs-12  wow bounceInLeft" data-wow-delay="2s">
+					<div class="col-lg-6 col-md-6 col-sm-5 col-xs-12 wow bounceInLeft" data-wow-delay="2s">
 						<h2 >pozew bez zadnego<br>ryzyka finasowego</h2>
 						<h4>Istnieje wiele dobrych argumentów skorzystania z 
 						finansowania oferowanego przez SKYLINE.</h4>
@@ -317,7 +323,7 @@
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 wow slideInRight" data-wow-delay="0.5s">
 					<h1>dawid i goliat<br>finansowanie sporów wyrównuje szanse</h1>
 				</div><!--col-->
-					<div class="col-lg-6 col-md-6 col-sm-7 col-xs-12  wow slideInRight" data-wow-delay="1s">
+					<div class="col-lg-6 col-md-6 col-sm-7 col-xs-12 wow slideInRight" data-wow-delay="1s">
 						<section class="vid_act">
 							<video width="100%" height="auto">
 							<source data-src="images/australia.mp4" type="video/mp4">
@@ -325,7 +331,7 @@
 							<h3>strefa inwestora</h3>
 						</section>
 					</div><!--col-->
-					<div class="col-lg-6 col-md-6 col-sm-5 col-xs-12 pad_right wow bounceInLeft" data-wow-delay="2s">
+					<div class="col-lg-6 col-md-6 col-sm-5 col-xs-12 wow bounceInLeft" data-wow-delay="2s">
 					    <h2>dopuszczalne we wszystkich <br> jurysdykcjach w europie</h2>
 						<h4>Finansowanie sporów to dynamicznie rozwijająca sie światowa 
 						branża, atrakcyjna także dla inwestorów</h4>

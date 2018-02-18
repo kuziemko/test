@@ -164,7 +164,6 @@ position: relative;
 	justify-content: center;
 	align-items: center; 
 	margin-bottom: 40px;
-
 }
 #logo img{
 	margin:0 auto;
@@ -272,9 +271,9 @@ min-height: 200px;
 	padding-bottom: 10%;
 	height: 10vh;
 	min-height: 170px;
-		display: flex;
-justify-content: center;
-align-items: center; 
+	display: flex;
+	justify-content: center;
+	align-items: center; 
 }
 #footer h4{	
 	font-size: 0.9em;
@@ -297,18 +296,15 @@ align-items: center;
 	cursor: pointer;
 }
 /*---dzialania-------------------------------------*/
-
 .activity{
 	height: 100vh;
 	display: flex;
-justify-content: center;
-align-items: center; 
-
+	justify-content: center;
+	align-items: center; 
 }
 .disp_auto{
 	height: auto !important;
 }
-
 .activity h1{
 	font-size: 1.7em;
 	text-transform: uppercase;
@@ -353,7 +349,6 @@ font-family: 'Roboto', sans-serif;
 	color: #898785;
 	padding-right: 20%;
 	padding-left: 10%;
-
 }
 .activity a{
 	float: right;
@@ -417,12 +412,10 @@ font-family: 'Roboto', sans-serif;
 	height: 60px;
 }
 .activity h3{
-
 	font-size: 1.6em;
 }
 .activity h2{
 	font-size: 1.6em;
-
 }
 .activity h1{
 	font-size: 1.1em;
@@ -433,21 +426,15 @@ font-family: 'Roboto', sans-serif;
 	padding-right: 10%;
 	margin-top: 35%;
 }
-.activity button{
-	margin-top: 25px;
-}
 }
 @media only screen and (max-width: 900px){
-	.activity h3{
-
+.activity h3{
 	font-size: 1.6em;
 }
 .activity h2{
 	font-size: 1.6em;
-
 }
 }
-
 @media only screen and (max-width: 760px){
 #header .navmenu li{
 	font-size: 2.5em;
@@ -455,7 +442,7 @@ font-family: 'Roboto', sans-serif;
 #header .main_text h3{
 	font-size: 1.5em;
 }
-	#header .main_text h1{
+#header .main_text h1{
 	font-size: 2.0em;	 
 }
 #logo img{
@@ -481,17 +468,18 @@ font-family: 'Roboto', sans-serif;
 	margin-top: 2%;	
 }
 .vid_act video{
-border-radius: 20px;
-width: 60%;
-margin: 0 auto;
-
+	border-radius: 20px;
+	width: 60%;
+	margin: 0 auto;
 }
 .activity h1{
-	text-align: center;
-	
+	text-align: center;	
+}
+.activity{
+	height: auto;
 }
 .activity h2{
-margin-top: 10px;
+	margin-top: 10px;
 	position: initial;
 	text-align: center;
 	font-size: 1.5em;
@@ -504,16 +492,14 @@ margin-top: 10px;
 }
 .dis_block{
 	display: flex;
-justify-content: center;
-align-items: center;
+	justify-content: center;
+	align-items: center;
 }
 .activity button img{
 	height: 56px;
 }
-
 #footer{
 	margin-top: 30px;
-
 }
 }
 @media only screen and (max-width: 700px){
@@ -530,9 +516,7 @@ align-items: center;
 .activity h1{
 font-size: 1.0em;
 }
-
 }
-
 @media only screen and (max-width: 600px){
 #header .main_text h1{
 	font-size: 1.8em;	 
@@ -550,7 +534,6 @@ font-size: 1.0em;
 }
 #content .products h1 {	
 	font-size: 2.0em;	
-	
 }
 #content .products p{	
 	font-size: 0.9em;	
@@ -569,7 +552,6 @@ font-size: 1.0em;
 }
 #contact h1{	
 	font-size: 2.0em;
-
 }
 #contact h2{
 	font-size: 1.2em;
@@ -586,15 +568,15 @@ font-size: 1.0em;
 	margin: 5px auto;
 }
 .activity h1{
-font-size: 0.9em;
+	font-size: 0.9em;
 }
 .vid_act video{
-border-radius: 20px;
-width: 90%;
-margin: 0 auto;
+	border-radius: 20px;
+	width: 90%;
+	margin: 0 auto;
 }
 .activity h2{
-margin-top: 10px;
+	margin-top: 10px;
 	position: initial;
 	text-align: center;
 	font-size: 1.2em;
@@ -604,7 +586,7 @@ margin-top: 10px;
 	font-size: 1.3em;	 
 }
 #header .main_text h3{
-	font-size: 1.0em;
+	font-size: 1.2em;
 }
 .activity h3{
 	font-size: 1.1em;
