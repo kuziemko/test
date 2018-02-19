@@ -67,8 +67,8 @@ html{
 }
 
 /*---[ Conteiner/Strona glowna ]----------------g p d l--------------------------------------*/
-#circle{
-	position: fixed;
+body{
+	font-family: 'Roboto', sans-serif;
 }
 #header{
 position: relative;
@@ -199,11 +199,19 @@ min-height: 200px;
 }
 #content{
 	background-color: #fff;
+	position: relative;
+}
+.circle_scroll{
+	position: absolute;
+	right: -40px;
+	width: 240px;
 }
 #content .products{
 	padding-left: 15%;
 	padding-right: 15%;
 	margin-top: 70px;
+	position: relative;
+	z-index: 3;
 }
 #content .products h1 {
 	text-align: center;
@@ -433,6 +441,11 @@ font-family: 'Roboto', sans-serif;
 }
 .activity h2{
 	font-size: 1.6em;
+}
+}
+@media only screen and (max-width: 850px){
+.circle_scroll{
+	display: none;
 }
 }
 @media only screen and (max-width: 760px){
