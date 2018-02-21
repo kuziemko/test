@@ -529,6 +529,10 @@ font-family: 'Roboto', sans-serif;
 .activity h1{
 font-size: 1.0em;
 }
+.activity{
+	height: auto;
+	min-height: 200px;
+}
 }
 @media only screen and (max-width: 600px){
 #header .main_text h1{
@@ -618,22 +622,4 @@ font-size: 1.0em;
 	font-size: 1.5em;
 	margin-bottom: 10px;
 }
-.activity {
-		height: auto;
-	}
-	.activity h1{
-		display: none;
-	}
-	.activity h2{
-		display: none;
-	}
-	.activity button{
-		display: none;
-	}
-	.activity video{
-		width: 80%;
-	}
-	#logo{
-		height: 100vh;
-	}
 }
